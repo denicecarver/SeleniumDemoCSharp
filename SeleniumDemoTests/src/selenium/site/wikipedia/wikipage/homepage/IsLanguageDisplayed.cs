@@ -2,17 +2,27 @@
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
-    [TestClass]
-    class IsLanguageDisplayed
+    [TestClass()]
+    public class IsLanguageDisplayed
     {
 
+        #region private members
+        //global for the test run
+        private static TestContext context;
         private static HomePage homePage = new HomePage();
+        #endregion
 
+        #region Initialisation and cleanup
+        /// <summary>
+        /// Executes once before the test-suite
+        /// </summary>
         [ClassInitialize]
-        public static void setup()
+        public static void setup(TestContext testContext)
         {
+            context = testContext;
             homePage.openPage();
         }
+        #endregion
 
         [TestMethod]
         public void isEnglishDisplayed()
