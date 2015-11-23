@@ -100,10 +100,9 @@ namespace com.selenium.wikitest.wikipage.homepage
             return found;
         }
 
-        public String goToProjectLink(String keyName)
+        public string goToProjectLink(Language language)
         {
-            //return clickProjectLink(HomePageText.getString(keyName));
-            return null;
+            return clickProjectLink(language.ToString());
         }
 
         public String goToListLinkByXPath(String xPath)
@@ -116,6 +115,7 @@ namespace com.selenium.wikitest.wikipage.homepage
         {
             return clickProjectLink(linkName);
         }
+
         public String getJapanesePageTitle()
         {
             IWebElement we = waitForElement(By.LinkText(/*HomePageText.getString("HomePage.LanguageJapaneseText")*/""));

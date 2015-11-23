@@ -3,7 +3,7 @@
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
     [TestClass()]
-    public class IsLanguageDisplayed
+    public class CentralLogoTests
     {
 
         #region private members
@@ -25,61 +25,67 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         #endregion
 
         [TestMethod]
-        public void isEnglishDisplayed()
+        public void isCentralLogoFound()
+        {
+            Assert.IsTrue(false);
+        }
+
+        [TestMethod]
+        public void isEnglishFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.English));
         }
 
         [TestMethod]
-        public void isSpanishDisplayed()
+        public void isSpanishFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Spanish));
         }
 
         [TestMethod]
-        public void isJapanesDisplayed()
+        public void isJapanesFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Japanese));
         }
 
         [TestMethod]
-        public void isRussianDisplayed()
+        public void isRussianFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Russian));
         }
 
         [TestMethod]
-        public void isFrenchDisplayed()
+        public void isFrenchFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.French));
         }
 
         [TestMethod]
-        public void isGermanDisplayed()
+        public void isGermanFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.German));
         }
 
         [TestMethod]
-        public void isItalianDisplayed()
+        public void isItalianFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Italian));
         }
 
         [TestMethod]
-        public void isChineseDisplayed()
+        public void isChineseFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Chinese));
         }
 
         [TestMethod]
-        public void isPolishDisplayed()
+        public void isPolishFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Polish));
         }
 
         [TestMethod]
-        public void isPortugueseDisplayed()
+        public void isPortugueseFound()
         {
             Assert.IsTrue(homePage.isLanguageFound(HomePage.Language.Portuguese));
         }

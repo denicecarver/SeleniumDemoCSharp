@@ -55,6 +55,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="src\selenium\site\wikipedia\shared\CommonMethods.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\HomePage.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\WikiPage.cs" />
   </ItemGroup>
@@ -67,6 +68,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
