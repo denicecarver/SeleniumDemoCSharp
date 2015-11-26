@@ -29,16 +29,6 @@ namespace com.selenium.wikitest.wikipage.homepage
             return getElementAtXPath(Resources.HomeXPathCentralLogoTitle);
         }
 
-        public bool isCentralLogoLanguageLinkFound(LanguageData.Language language)
-        {
-            String xpath = LanguageData.getLanguageXPath(language);
-            return getDisplayedLanguage(LanguageData.getLanguageXPath(language)).StartsWith(LanguageData.getNativeLanguageName(language));
-        }
-
-        public string clickCentralLogoLanguageLink(LanguageData.Language language)
-        {
-            return clickProjectLinkByXPath(language);
-        }
 
     }
 }
