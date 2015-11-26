@@ -1,6 +1,7 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using selenium.site.wikipedia.shared;
+using selenium.site.wikipedia.languages;
+using shared;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
@@ -22,15 +23,15 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         public static void setup(TestContext testContext)
         {
             context = testContext;
-            homePage.openPage();
+            homePage.goToWikiHomePage();
         }
         #endregion
 
         [TestMethod]
         public void goToEnglishWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.English);
-            String expectedResult = HomePage.Language.English.ToString();
+            string actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.English);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.English);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -38,8 +39,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToPolishWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.Polish);
-            String expectedResult = HomePage.Language.Polish.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Polish);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Polish);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -47,16 +48,16 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToFrenchWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.French);
-            String expectedResult = HomePage.Language.French.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.French);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.French);
             Assert.IsTrue(actualResult.Contains(expectedResult), CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
         public void goToGermanWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.German);
-            String expectedResult = HomePage.Language.German.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.German);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.German);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -64,8 +65,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToItalianWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.Italian);
-            String expectedResult = HomePage.Language.Italian.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Italian);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Italian);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -73,8 +74,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToJapaneseWiki()
         {
-            String actualResult = homePage.getJapanesePageTitle();
-            String expectedResult = HomePage.Language.Japanese.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Japanese);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Japanese);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -82,8 +83,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToChineseWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.Chinese);
-            String expectedResult = HomePage.Language.Chinese.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Chinese);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Chinese);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -91,8 +92,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToRussianWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.Russian);
-            String expectedResult = HomePage.Language.Russian.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Russian);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Russian);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -100,8 +101,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToPortugueseWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.Portuguese);
-            String expectedResult = HomePage.Language.Portuguese.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Portuguese);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Portuguese);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -109,8 +110,8 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void goToSpanishWiki()
         {
-            String actualResult = homePage.goToProjectLink(HomePage.Language.Spanish);
-            String expectedResult = HomePage.Language.Spanish.ToString();
+            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Spanish);
+            String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Spanish);
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
@@ -118,7 +119,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestCleanup]
         public void resetForNextTest()
         {
-            homePage.openHomePage();
+            homePage.goToWikiHomePage();
         }
 
         [ClassCleanup]

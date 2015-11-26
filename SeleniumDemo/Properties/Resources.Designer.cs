@@ -151,6 +151,96 @@ namespace SeleniumDemo.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://zh.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLChinese {
+            get {
+                return ResourceManager.GetString("HomeURLChinese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://en.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLEnglish {
+            get {
+                return ResourceManager.GetString("HomeURLEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://fr.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLFrench {
+            get {
+                return ResourceManager.GetString("HomeURLFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://de.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLGerman {
+            get {
+                return ResourceManager.GetString("HomeURLGerman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://it.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLItalian {
+            get {
+                return ResourceManager.GetString("HomeURLItalian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://ja.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLJapanese {
+            get {
+                return ResourceManager.GetString("HomeURLJapanese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://pl.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLPolish {
+            get {
+                return ResourceManager.GetString("HomeURLPolish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://pt.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLPortuguese {
+            get {
+                return ResourceManager.GetString("HomeURLPortuguese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://ru.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLRussian {
+            get {
+                return ResourceManager.GetString("HomeURLRussian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://es.wikipedia.org.
+        /// </summary>
+        internal static string HomeURLSpanish {
+            get {
+                return ResourceManager.GetString("HomeURLSpanish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;zh&apos;]/a.
         /// </summary>
         internal static string HomeXPathChinese {
@@ -237,6 +327,15 @@ namespace SeleniumDemo.Properties {
         internal static string HomeXPathSpanish {
             get {
                 return ResourceManager.GetString("HomeXPathSpanish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string String {
+            get {
+                return ResourceManager.GetString("String", resourceCulture);
             }
         }
     }

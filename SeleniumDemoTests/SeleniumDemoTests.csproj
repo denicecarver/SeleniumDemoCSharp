@@ -60,9 +60,6 @@
       <Name>SeleniumDemo</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\GoToWikiInLanguage.cs" />
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

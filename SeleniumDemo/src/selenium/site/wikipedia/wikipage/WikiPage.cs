@@ -2,15 +2,29 @@
 using System.Collections.Generic;
 
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+//using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
+
+using selenium.site.wikipedia.languages;
+using Resources = SeleniumDemo.Properties.Resources;
 
 namespace selenium.site.wikipedia.wikipage
 
 {
     public class WikiPage
     {
-        protected IWebDriver webDriver = new FirefoxDriver();
+        private static String wikiOrgUrl = "https://www.wikipedia.org/";
+
+        protected IWebDriver webDriver = new ChromeDriver();
+
+        public static string WikiOrgUrl
+        {
+            get
+            {
+                return wikiOrgUrl;
+            }
+        }
 
         protected String getDisplayedLanguage(String actualLanguage)
         {
@@ -22,7 +36,12 @@ namespace selenium.site.wikipedia.wikipage
             return webDriver;
         }
 
-        public void openPage(String url)
+        public void goToWikiHomePage()
+        {
+            goToUrl(WikiOrgUrl);
+        }
+
+        public void goToUrl(String url)
         {
             try
             {
@@ -79,13 +98,18 @@ namespace selenium.site.wikipedia.wikipage
         protected String clickProjectLink(String linkName)
         {
             (webDriver.FindElement(By.PartialLinkText(linkName))).Click();
-            return webDriver.Title;
+            return webDriver.Url;
         }
 
-        public String clickProjectLinkByXPath(String xPath)
+        public String getCurrentUrl()
         {
-            (webDriver.FindElement(By.XPath(xPath))).Click();
-            return webDriver.Title;
+            return webDriver.Url;
+        }
+
+        public String clickProjectLinkByXPath(LanguageData.Language language)
+        {
+            (webDriver.FindElement(By.XPath(LanguageData.getLanguageXPath(language)))).Click();
+            return webDriver.Url;
         }
 
         public String clickProjectLinkByID(String id)

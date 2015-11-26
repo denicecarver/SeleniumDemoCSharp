@@ -147,6 +147,36 @@
   <data name="HomeLanguageSpanish" xml:space="preserve">
     <value>Español</value>
   </data>
+  <data name="HomeURLChinese" xml:space="preserve">
+    <value>https://zh.wikipedia.org</value>
+  </data>
+  <data name="HomeURLEnglish" xml:space="preserve">
+    <value>https://en.wikipedia.org</value>
+  </data>
+  <data name="HomeURLFrench" xml:space="preserve">
+    <value>https://fr.wikipedia.org</value>
+  </data>
+  <data name="HomeURLGerman" xml:space="preserve">
+    <value>https://de.wikipedia.org</value>
+  </data>
+  <data name="HomeURLItalian" xml:space="preserve">
+    <value>https://it.wikipedia.org</value>
+  </data>
+  <data name="HomeURLJapanese" xml:space="preserve">
+    <value>https://ja.wikipedia.org</value>
+  </data>
+  <data name="HomeURLPolish" xml:space="preserve">
+    <value>https://pl.wikipedia.org</value>
+  </data>
+  <data name="HomeURLPortuguese" xml:space="preserve">
+    <value>https://pt.wikipedia.org</value>
+  </data>
+  <data name="HomeURLRussian" xml:space="preserve">
+    <value>https://ru.wikipedia.org</value>
+  </data>
+  <data name="HomeURLSpanish" xml:space="preserve">
+    <value>https://es.wikipedia.org</value>
+  </data>
   <data name="HomeXPathChinese" xml:space="preserve">
     <value>//div[@lang='zh']/a</value>
   </data>
@@ -176,5 +206,8 @@
   </data>
   <data name="HomeXPathSpanish" xml:space="preserve">
     <value>//div[@lang='es']/a</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value />
   </data>
 </root>
