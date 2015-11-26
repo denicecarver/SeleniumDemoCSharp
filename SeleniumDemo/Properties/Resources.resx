@@ -177,37 +177,37 @@
   <data name="HomeURLSpanish" xml:space="preserve">
     <value>https://es.wikipedia.org</value>
   </data>
-  <data name="HomeXPathChinese" xml:space="preserve">
+  <data name="HomeXPathCentralLogoChinese" xml:space="preserve">
     <value>//div[@lang='zh']/a</value>
   </data>
-  <data name="HomeXPathEnglish" xml:space="preserve">
+  <data name="HomeXPathCentralLogoEnglish" xml:space="preserve">
     <value>//div[@lang='en']/a</value>
   </data>
-  <data name="HomeXPathFrench" xml:space="preserve">
+  <data name="HomeXPathCentralLogoFrench" xml:space="preserve">
     <value>//div[@lang='fr']/a</value>
   </data>
-  <data name="HomeXPathGerman" xml:space="preserve">
+  <data name="HomeXPathCentralLogoGerman" xml:space="preserve">
     <value>//div[@lang='de']/a</value>
   </data>
-  <data name="HomeXPathItalian" xml:space="preserve">
+  <data name="HomeXPathCentralLogoItalian" xml:space="preserve">
     <value>//div[@lang='it']/a</value>
   </data>
-  <data name="HomeXPathJapanese" xml:space="preserve">
+  <data name="HomeXPathCentralLogoJapanese" xml:space="preserve">
     <value>//div[@lang='ja']/a</value>
   </data>
-  <data name="HomeXPathPolish" xml:space="preserve">
+  <data name="HomeXPathCentralLogoPolish" xml:space="preserve">
     <value>//div[@lang='pl']/a</value>
   </data>
-  <data name="HomeXPathPortuguese" xml:space="preserve">
+  <data name="HomeXPathCentralLogoPortuguese" xml:space="preserve">
     <value>//div[@lang='pt']/a</value>
   </data>
-  <data name="HomeXPathRussian" xml:space="preserve">
+  <data name="HomeXPathCentralLogoRussian" xml:space="preserve">
     <value>//div[@lang='ru']/a</value>
   </data>
-  <data name="HomeXPathSpanish" xml:space="preserve">
+  <data name="HomeXPathCentralLogoSpanish" xml:space="preserve">
     <value>//div[@lang='es']/a</value>
   </data>
-  <data name="String" xml:space="preserve">
-    <value />
+  <data name="HomeXPathCentralLogoTitle" xml:space="preserve">
+    <value>//body/h1/img[@title='Wikipedia']</value>
   </data>
 </root>

@@ -30,25 +30,25 @@ namespace selenium.site.wikipedia.languages
             switch (language)
             {
                 case Language.English:
-                    return Resources.HomeXPathEnglish;
+                    return Resources.HomeXPathCentralLogoEnglish;
                 case Language.Chinese:
-                    return Resources.HomeXPathChinese;
+                    return Resources.HomeXPathCentralLogoChinese;
                 case Language.French:
-                    return Resources.HomeXPathFrench;
+                    return Resources.HomeXPathCentralLogoFrench;
                 case Language.German:
-                    return Resources.HomeXPathGerman;
+                    return Resources.HomeXPathCentralLogoGerman;
                 case Language.Italian:
-                    return Resources.HomeXPathItalian;
+                    return Resources.HomeXPathCentralLogoItalian;
                 case Language.Japanese:
-                    return Resources.HomeXPathJapanese;
+                    return Resources.HomeXPathCentralLogoJapanese;
                 case Language.Polish:
-                    return Resources.HomeXPathPolish;
+                    return Resources.HomeXPathCentralLogoPolish;
                 case Language.Portuguese:
-                    return Resources.HomeXPathPortuguese;
+                    return Resources.HomeXPathCentralLogoPortuguese;
                 case Language.Russian:
-                    return Resources.HomeXPathRussian;
+                    return Resources.HomeXPathCentralLogoRussian;
                 case Language.Spanish:
-                    return Resources.HomeXPathSpanish;
+                    return Resources.HomeXPathCentralLogoSpanish;
             }
 
             return null;

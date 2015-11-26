@@ -2,6 +2,7 @@
 using System;
 using selenium.site.wikipedia.languages;
 using shared;
+using OpenQA.Selenium;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
@@ -44,158 +45,260 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
 
         #region Central Logo Items Exist Testing
         [TestMethod]
-        public void isCentralLogoFound()
+        public void isWikipediaLogoFound()
         {
-            Assert.IsTrue(false);
+            // Is found if the logo element with title attribute 'Wikipedia' is found
+            Assert.IsNotNull(homePage.getCentralLogoElement());
         }
 
         [TestMethod]
-        public void isEnglishFound()
+        public void isEnglishLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.English));
+            // Is found if the English link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.English));
         }
 
         [TestMethod]
-        public void isSpanishFound()
+        public void isSpanishLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Spanish));
+            // Is found if the Spanish link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Spanish));
         }
 
         [TestMethod]
-        public void isJapanesFound()
+        public void isJapanesLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Japanese));
+            // Is found if the Japanese link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Japanese));
         }
 
         [TestMethod]
-        public void isRussianFound()
+        public void isRussianLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Russian));
+            // Is found if the Russian link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Russian));
         }
 
         [TestMethod]
-        public void isFrenchFound()
+        public void isFrenchLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.French));
+            // Is found if the French link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.French));
         }
 
         [TestMethod]
-        public void isGermanFound()
+        public void isGermanLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.German));
+            // Is found if the German link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.German));
         }
 
         [TestMethod]
-        public void isItalianFound()
+        public void isItalianLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Italian));
+            // Is found if the Italian link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Italian));
         }
 
         [TestMethod]
-        public void isChineseFound()
+        public void isChineseLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Chinese));
+            // Is found if the Chinese link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Chinese));
         }
 
         [TestMethod]
-        public void isPolishFound()
+        public void isPolishLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Polish));
+            // Is found if the Polish link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Polish));
         }
 
         [TestMethod]
-        public void isPortugueseFound()
+        public void isPortugueseLinkFound()
         {
-            Assert.IsTrue(homePage.isCentralLogoLanguageLinkFound(LanguageData.Language.Portuguese));
+            // Is found if the Portuguese link is returned
+            Assert.IsNotNull(homePage.getCentralLogoLanguageLink(LanguageData.Language.Portuguese));
         }
         #endregion
 
         #region Central Logo Links Testing
         [TestMethod]
-        public void goToEnglishWiki()
+        public void goesToEnglishWikiFromCentralLogoLink()
         {
-            string actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.English);
+            // Click on the English link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.English).Click();
+
+            // Get the actual URL of clicking on the English link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the English link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.English);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToPolishWiki()
+        public void goesToPolishWikiFromCentralLogo()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Polish);
+            // Click on the Polish link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Polish).Click();
+
+            // Get the actual URL of clicking on the Polish link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Polish link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Polish);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToFrenchWiki()
+        public void goesToFrenchWikiFromCentralLogo()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.French);
+            // Click on the French link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.French).Click();
+
+            // Get the actual URL of clicking on the French link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the French link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.French);
-            Assert.IsTrue(actualResult.Contains(expectedResult), CommonMethods.formatAssertMessage(expectedResult, actualResult));
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
+            Assert.IsTrue(actualResult.Contains(expectedResult),
+                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToGermanWiki()
+        public void goesToGermanWikiFromCentralLogo()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.German);
+            // Click on the German link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.German).Click();
+
+            // Get the actual URL of clicking on the German link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the German link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.German);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToItalianWiki()
+        public void goesToItalianWikiFromCentralLogo()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Italian);
+            // Click on the Italian link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Italian).Click();
+
+            // Get the actual URL of clicking on the Italian link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Italian link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Italian);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToJapaneseWiki()
+        public void goesToJapaneseWikiFromCentralLogo()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Japanese);
+            // Click on the Japanese link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Japanese).Click();
+
+            // Get the actual URL of clicking on the Japanese link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Japanese link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Japanese);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToChineseWiki()
+        public void goesToChineseWikiFromCentralLogoLink()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Chinese);
+            // Click on the Chinese link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Chinese).Click();
+
+            // Get the actual URL of clicking on the Chinese link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Chinese link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Chinese);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToRussianWiki()
+        public void goesToRussianWikiFromCentralLogoLink()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Russian);
+            // Click on the Russian link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Russian).Click();
+
+            // Get the actual URL of clicking on the Russian link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Russian link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Russian);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToPortugueseWiki()
+        public void goesToPortugueseWikiFromCentralLogoLink()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Portuguese);
+            // Click on the Portuguese link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Portuguese).Click();
+
+            // Get the actual URL of clicking on the Portuguese link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Portuguese link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Portuguese);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
-        public void goToSpanishWiki()
+        public void goesToSpanishWikiFromCentralLogoLink()
         {
-            String actualResult = homePage.clickCentralLogoLanguageLink(LanguageData.Language.Spanish);
+            // Click on the Spanish link
+            homePage.getCentralLogoLanguageLink(LanguageData.Language.Spanish).Click();
+
+            // Get the actual URL of clicking on the Spanish link
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL of the Spanish link
             String expectedResult = LanguageData.getLanguageHomepageUrl(LanguageData.Language.Spanish);
+
+            // Compare actual and expected URLs
+            // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
                     CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 
 using OpenQA.Selenium;
-//using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+//using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
 
 using selenium.site.wikipedia.languages;
@@ -14,9 +14,9 @@ namespace selenium.site.wikipedia.wikipage
 {
     public class WikiPage
     {
-        private static String wikiOrgUrl = "https://www.wikipedia.org/";
+        private const String wikiOrgUrl = "https://www.wikipedia.org/";
 
-        protected IWebDriver webDriver = new ChromeDriver();
+        protected IWebDriver webDriver = new FirefoxDriver();
 
         public static string WikiOrgUrl
         {
@@ -54,14 +54,14 @@ namespace selenium.site.wikipedia.wikipage
             }
         }
 
-        public void openHomePage()
-        {
-            //openPage(WikiPageText.getString("AnyPage.WikiHomeURL"));
-        }
-
         public String getTextAtXPath(String xpathToElement)
         {
             return waitForElement(By.XPath(xpathToElement)).Text;
+        }
+
+        public IWebElement getElementAtXPath(String xpathToElement)
+        {
+            return waitForElement(By.XPath(xpathToElement));
         }
 
         public String getTextAtTitle(String titleOfElement)
@@ -145,6 +145,7 @@ namespace selenium.site.wikipedia.wikipage
             return webDriver.FindElements(By.ClassName(elementClassName));
         }
 
+        // Stubbed out in case of future need
         protected IWebElement waitForElement(By by)
         {
             //int tenthSecond;

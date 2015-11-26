@@ -243,99 +243,99 @@ namespace SeleniumDemo.Properties {
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;zh&apos;]/a.
         /// </summary>
-        internal static string HomeXPathChinese {
+        internal static string HomeXPathCentralLogoChinese {
             get {
-                return ResourceManager.GetString("HomeXPathChinese", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoChinese", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;en&apos;]/a.
         /// </summary>
-        internal static string HomeXPathEnglish {
+        internal static string HomeXPathCentralLogoEnglish {
             get {
-                return ResourceManager.GetString("HomeXPathEnglish", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoEnglish", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;fr&apos;]/a.
         /// </summary>
-        internal static string HomeXPathFrench {
+        internal static string HomeXPathCentralLogoFrench {
             get {
-                return ResourceManager.GetString("HomeXPathFrench", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoFrench", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;de&apos;]/a.
         /// </summary>
-        internal static string HomeXPathGerman {
+        internal static string HomeXPathCentralLogoGerman {
             get {
-                return ResourceManager.GetString("HomeXPathGerman", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoGerman", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;it&apos;]/a.
         /// </summary>
-        internal static string HomeXPathItalian {
+        internal static string HomeXPathCentralLogoItalian {
             get {
-                return ResourceManager.GetString("HomeXPathItalian", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoItalian", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;ja&apos;]/a.
         /// </summary>
-        internal static string HomeXPathJapanese {
+        internal static string HomeXPathCentralLogoJapanese {
             get {
-                return ResourceManager.GetString("HomeXPathJapanese", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoJapanese", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;pl&apos;]/a.
         /// </summary>
-        internal static string HomeXPathPolish {
+        internal static string HomeXPathCentralLogoPolish {
             get {
-                return ResourceManager.GetString("HomeXPathPolish", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoPolish", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;pt&apos;]/a.
         /// </summary>
-        internal static string HomeXPathPortuguese {
+        internal static string HomeXPathCentralLogoPortuguese {
             get {
-                return ResourceManager.GetString("HomeXPathPortuguese", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoPortuguese", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;ru&apos;]/a.
         /// </summary>
-        internal static string HomeXPathRussian {
+        internal static string HomeXPathCentralLogoRussian {
             get {
-                return ResourceManager.GetString("HomeXPathRussian", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoRussian", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;es&apos;]/a.
         /// </summary>
-        internal static string HomeXPathSpanish {
+        internal static string HomeXPathCentralLogoSpanish {
             get {
-                return ResourceManager.GetString("HomeXPathSpanish", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoSpanish", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to //body/h1/img[@title=&apos;Wikipedia&apos;].
         /// </summary>
-        internal static string String {
+        internal static string HomeXPathCentralLogoTitle {
             get {
-                return ResourceManager.GetString("String", resourceCulture);
+                return ResourceManager.GetString("HomeXPathCentralLogoTitle", resourceCulture);
             }
         }
     }
