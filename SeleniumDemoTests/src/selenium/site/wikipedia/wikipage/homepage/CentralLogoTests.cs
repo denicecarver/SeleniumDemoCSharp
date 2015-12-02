@@ -1,8 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using selenium.site.wikipedia.languages;
+
 using shared;
-using OpenQA.Selenium;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
@@ -48,7 +50,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         public void isWikipediaLogoFound()
         {
             // Is found if the logo element with title attribute 'Wikipedia' is found
-            Assert.IsNotNull(homePage.getCentralLogoElement());
+            Assert.IsNotNull(homePage.getCentralLogoTitle());
         }
 
         [TestMethod]
