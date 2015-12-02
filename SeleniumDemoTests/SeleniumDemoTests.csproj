@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\CentralLogoTests.cs" />
+    <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\SearchFormTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SeleniumDemo\SeleniumDemo.csproj">
