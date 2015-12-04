@@ -61,6 +61,15 @@ namespace SeleniumDemoTests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error has occurred while searching: Search request is longer than the maximum allowed length. (314 &gt; 300).
+        /// </summary>
+        internal static string ErrorMsgExceedsLengthLimit {
+            get {
+                return ResourceManager.GetString("ErrorMsgExceedsLengthLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 中文.
         /// </summary>
         internal static string HomeLanguageChinese {

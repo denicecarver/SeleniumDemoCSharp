@@ -75,11 +75,16 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         public void searchForTooLongTerm()
         {
             // Enter term that exceeds length limit into field
+            homePage.getSearchTextField().SendKeys(Resources.HomeSearchTermExceedsLengthLimit);
 
             // Click go button
+            homePage.getSearchButton().Click();
+
             // Get URL at search result page
+            string actualValue = homePage.getErrorMessageElement().Text;
+
             // Compare with expected value
-            Assert.Fail();
+            Assert.AreEqual(actualValue, Resources.ErrorMsgExceedsLengthLimit);
         }
 
     }

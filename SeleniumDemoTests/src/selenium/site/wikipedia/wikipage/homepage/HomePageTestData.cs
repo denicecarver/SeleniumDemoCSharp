@@ -5,7 +5,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
     public static class HomePageTestData
     {
-        public static string getLanguageHomepageUrl(Language language)
+        public static string GetLanguageHomepageUrl(Language language)
         {
             switch (language)
             {
@@ -34,7 +34,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             return null;
         }
 
-        public static string getNativeLanguageName(Language language)
+        public static string GetNativeLanguageName(Language language)
         {
 
             switch (language)

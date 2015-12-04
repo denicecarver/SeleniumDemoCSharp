@@ -153,7 +153,10 @@
   <data name="HomeXPathCentralLogoTitle" xml:space="preserve">
     <value>//body/h1/img[@title='Wikipedia']</value>
   </data>
-  <data name="HomeXPathSearchFormInputField" xml:space="preserve">
+  <data name="HomeXPathSearchButton" xml:space="preserve">
     <value>//button[@name="go"]</value>
+  </data>
+  <data name="ResultsXPathSpecialErrorMsg" xml:space="preserve">
+    <value>//*[@class='error']</value>
   </data>
 </root>

@@ -129,11 +129,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the English link
             homePage.getCentralLogoLanguageLink(Language.English).Click();
 
-            // Get the actual URL of clicking on the English link
+            // Get the actual URL after clicking on the English link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the English link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.English);
+            // Get the expected URL for the English link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.English);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -147,11 +147,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Polish link
             homePage.getCentralLogoLanguageLink(Language.Polish).Click();
 
-            // Get the actual URL of clicking on the Polish link
+            // Get the actual URL after clicking on the Polish link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Polish link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Polish);
+            // Get the expected URL for the Polish link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Polish);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -165,11 +165,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the French link
             homePage.getCentralLogoLanguageLink(Language.French).Click();
 
-            // Get the actual URL of clicking on the French link
+            // Get the actual URL after clicking on the French link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the French link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.French);
+            // Get the expected URL for the French link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.French);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -183,11 +183,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the German link
             homePage.getCentralLogoLanguageLink(Language.German).Click();
 
-            // Get the actual URL of clicking on the German link
+            // Get the actual URL after clicking on the German link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the German link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.German);
+            // Get the expected URL for the German link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.German);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -201,11 +201,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Italian link
             homePage.getCentralLogoLanguageLink(Language.Italian).Click();
 
-            // Get the actual URL of clicking on the Italian link
+            // Get the actual URL after clicking on the Italian link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Italian link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Italian);
+            // Get the expected URL for the Italian link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Italian);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -219,11 +219,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Japanese link
             homePage.getCentralLogoLanguageLink(Language.Japanese).Click();
 
-            // Get the actual URL of clicking on the Japanese link
+            // Get the actual URL after clicking on the Japanese link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Japanese link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Japanese);
+            // Get the expected URL for the Japanese link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Japanese);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -237,11 +237,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Chinese link
             homePage.getCentralLogoLanguageLink(Language.Chinese).Click();
 
-            // Get the actual URL of clicking on the Chinese link
+            // Get the actual URL after clicking on the Chinese link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Chinese link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Chinese);
+            // Get the expected URL for the Chinese link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Chinese);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -255,11 +255,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Russian link
             homePage.getCentralLogoLanguageLink(Language.Russian).Click();
 
-            // Get the actual URL of clicking on the Russian link
+            // Get the actual URL after clicking on the Russian link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Russian link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Russian);
+            // Get the expected URL for the Russian link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Russian);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -273,11 +273,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Portuguese link
             homePage.getCentralLogoLanguageLink(Language.Portuguese).Click();
 
-            // Get the actual URL of clicking on the Portuguese link
+            // Get the actual URL after clicking on the Portuguese link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Portuguese link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Portuguese);
+            // Get the expected URL for the Portuguese link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Portuguese);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
@@ -291,11 +291,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             // Click on the Spanish link
             homePage.getCentralLogoLanguageLink(Language.Spanish).Click();
 
-            // Get the actual URL of clicking on the Spanish link
+            // Get the actual URL after clicking on the Spanish link
             string actualResult = homePage.getCurrentUrl();
 
-            // Get the expected URL of the Spanish link
-            string expectedResult = HomePageTestData.getLanguageHomepageUrl(Language.Spanish);
+            // Get the expected URL for the Spanish link
+            string expectedResult = HomePageTestData.GetLanguageHomepageUrl(Language.Spanish);
 
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)

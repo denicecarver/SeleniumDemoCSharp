@@ -15,17 +15,35 @@ namespace com.selenium.wikitest.wikipage.homepage
             goToUrl(WikiOrgUrl);
         }
 
-        #region Central Logo
+        #region Central Logo Methods
         public IWebElement getCentralLogoLanguageLink(Language language)
         {
-            return getElementAtXPath(HomePageData.getLanguageXPath(language));
+            return getElementByXPath(HomePageData.GetXPathToLanguageLink(language));
         }
 
         public IWebElement getCentralLogoTitle()
         {
-            return getElementAtXPath(Resources.HomeXPathCentralLogoTitle);
+            return getElementByXPath(Resources.HomeXPathCentralLogoTitle);
         }
         #endregion
 
+        #region Search Form Methods
+        public IWebElement getSearchTextField()
+        {
+            return getElementByID(Resources.HomeIDSearchFormInputField);
+        }
+
+        public IWebElement getSearchButton()
+        {
+            return getElementByXPath(Resources.HomeXPathSearchButton);
+        }
+        #endregion
+
+        #region Result Page Methods
+        public IWebElement getErrorMessageElement()
+        {
+            return getElementByXPath(Resources.ResultsXPathSpecialErrorMsg);
+        }
+        #endregion
     }
 }

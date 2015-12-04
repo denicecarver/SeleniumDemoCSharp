@@ -171,9 +171,18 @@ namespace SeleniumDemo.Properties {
         /// <summary>
         ///   Looks up a localized string similar to //button[@name=&quot;go&quot;].
         /// </summary>
-        internal static string HomeXPathSearchFormInputField {
+        internal static string HomeXPathSearchButton {
             get {
-                return ResourceManager.GetString("HomeXPathSearchFormInputField", resourceCulture);
+                return ResourceManager.GetString("HomeXPathSearchButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //*[@class=&apos;error&apos;].
+        /// </summary>
+        internal static string ResultsXPathSpecialErrorMsg {
+            get {
+                return ResourceManager.GetString("ResultsXPathSpecialErrorMsg", resourceCulture);
             }
         }
     }
