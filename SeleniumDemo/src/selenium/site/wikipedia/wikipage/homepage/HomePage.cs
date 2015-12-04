@@ -42,22 +42,33 @@ namespace com.selenium.wikitest.wikipage.homepage
         }
         #endregion
 
-        #region Central Logo Methods
-        public IWebElement getCentralLogoLanguageLink(Language language)
+        #region Central Logo Elements
+        public IWebElement CentralLogoLanguageLink(Language language)
         {
             return getElementByXPath(HomePageData.GetXPathToLanguageLink(language));
         }
 
-        public IWebElement getCentralLogoTitle()
+        public IWebElement CentralLogoEnglishLink
         {
-            return getElementByXPath(Resources.HomeXPathCentralLogoTitle);
+            get
+            {
+                return getElementByXPath(HomePageData.GetXPathToLanguageLink(Language.English));
+            }
+        }
+
+        public IWebElement CentralLogoTitle
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoTitle);
+            }
         }
         #endregion
 
-        #region Search Form Methods
+        #region Search Form Elements
         #endregion
 
-        #region Result Page properties
+        #region Result Page Elements
         public IWebElement ResultsPageErrorMsg
         {
             get

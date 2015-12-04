@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using shared;
 using TestDataResources = SeleniumDemoTests.Properties.Resources;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
@@ -56,7 +56,21 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void searchForBlankTerm()
         {
-            Assert.Fail();
+            // Enter an empty string into the Search field to assure the field is blank
+            homePage.SearchTextField.SendKeys("");
+
+            // Click go button
+            homePage.SearchGoButton.Click();
+
+            // Get URL at search result page when search term doesn't exist
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get the expected URL for landing on the special page
+            string expectedResult = TestDataResources.SpecialPageURL;
+
+            // Compare with expected error msg value
+            Assert.IsTrue(actualResult.Contains(expectedResult),
+                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -81,10 +95,10 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             homePage.SearchGoButton.Click();
 
             // Get error msg at search result page
-            string actualValue = homePage.ResultsPageErrorMsg.Text;
+            string actualResult = homePage.ResultsPageErrorMsg.Text;
 
             // Compare with expected error msg value
-            Assert.AreEqual(actualValue, TestDataResources.ErrorMsgExceedsLengthLimit);
+            Assert.AreEqual(actualResult, TestDataResources.ErrorMsgExceedsLengthLimit);
         }
 
     }

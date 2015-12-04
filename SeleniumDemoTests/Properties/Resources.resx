@@ -150,37 +150,40 @@
   <data name="HomeLanguageSpanish" xml:space="preserve">
     <value>Español</value>
   </data>
+  <data name="HomePageURLChinese" xml:space="preserve">
+    <value>https://zh.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLEnglish" xml:space="preserve">
+    <value>https://en.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLFrench" xml:space="preserve">
+    <value>https://fr.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLGerman" xml:space="preserve">
+    <value>https://de.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLItalian" xml:space="preserve">
+    <value>https://it.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLJapanese" xml:space="preserve">
+    <value>https://ja.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLPolish" xml:space="preserve">
+    <value>https://pl.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLPortuguese" xml:space="preserve">
+    <value>https://pt.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLRussian" xml:space="preserve">
+    <value>https://ru.wikipedia.org</value>
+  </data>
+  <data name="HomePageURLSpanish" xml:space="preserve">
+    <value>https://es.wikipedia.org</value>
+  </data>
   <data name="HomeSearchTermExceedsLengthLimit" xml:space="preserve">
     <value>abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz</value>
   </data>
-  <data name="HomeURLChinese" xml:space="preserve">
-    <value>https://zh.wikipedia.org</value>
-  </data>
-  <data name="HomeURLEnglish" xml:space="preserve">
-    <value>https://en.wikipedia.org</value>
-  </data>
-  <data name="HomeURLFrench" xml:space="preserve">
-    <value>https://fr.wikipedia.org</value>
-  </data>
-  <data name="HomeURLGerman" xml:space="preserve">
-    <value>https://de.wikipedia.org</value>
-  </data>
-  <data name="HomeURLItalian" xml:space="preserve">
-    <value>https://it.wikipedia.org</value>
-  </data>
-  <data name="HomeURLJapanese" xml:space="preserve">
-    <value>https://ja.wikipedia.org</value>
-  </data>
-  <data name="HomeURLPolish" xml:space="preserve">
-    <value>https://pl.wikipedia.org</value>
-  </data>
-  <data name="HomeURLPortuguese" xml:space="preserve">
-    <value>https://pt.wikipedia.org</value>
-  </data>
-  <data name="HomeURLRussian" xml:space="preserve">
-    <value>https://ru.wikipedia.org</value>
-  </data>
-  <data name="HomeURLSpanish" xml:space="preserve">
-    <value>https://es.wikipedia.org</value>
+  <data name="SpecialPageURL" xml:space="preserve">
+    <value>https://en.wikipedia.org/wiki/Special</value>
   </data>
 </root>

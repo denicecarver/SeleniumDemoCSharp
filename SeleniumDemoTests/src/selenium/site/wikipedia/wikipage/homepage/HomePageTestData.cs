@@ -5,35 +5,6 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
     public static class HomePageTestData
     {
-        public static string GetLanguageHomepageUrl(Language language)
-        {
-            switch (language)
-            {
-                case Language.English:
-                    return TestResources.HomeURLEnglish;
-                case Language.Chinese:
-                    return TestResources.HomeURLChinese;
-                case Language.French:
-                    return TestResources.HomeURLFrench;
-                case Language.German:
-                    return TestResources.HomeURLGerman;
-                case Language.Italian:
-                    return TestResources.HomeURLItalian;
-                case Language.Japanese:
-                    return TestResources.HomeURLJapanese;
-                case Language.Polish:
-                    return TestResources.HomeURLPolish;
-                case Language.Portuguese:
-                    return TestResources.HomeURLPortuguese;
-                case Language.Russian:
-                    return TestResources.HomeURLRussian;
-                case Language.Spanish:
-                    return TestResources.HomeURLSpanish;
-            }
-
-            return null;
-        }
-
         public static string GetNativeLanguageName(Language language)
         {
 

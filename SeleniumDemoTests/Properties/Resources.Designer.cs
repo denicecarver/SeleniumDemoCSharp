@@ -160,6 +160,96 @@ namespace SeleniumDemoTests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://zh.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLChinese {
+            get {
+                return ResourceManager.GetString("HomePageURLChinese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://en.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLEnglish {
+            get {
+                return ResourceManager.GetString("HomePageURLEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://fr.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLFrench {
+            get {
+                return ResourceManager.GetString("HomePageURLFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://de.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLGerman {
+            get {
+                return ResourceManager.GetString("HomePageURLGerman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://it.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLItalian {
+            get {
+                return ResourceManager.GetString("HomePageURLItalian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://ja.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLJapanese {
+            get {
+                return ResourceManager.GetString("HomePageURLJapanese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://pl.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLPolish {
+            get {
+                return ResourceManager.GetString("HomePageURLPolish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://pt.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLPortuguese {
+            get {
+                return ResourceManager.GetString("HomePageURLPortuguese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://ru.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLRussian {
+            get {
+                return ResourceManager.GetString("HomePageURLRussian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://es.wikipedia.org.
+        /// </summary>
+        internal static string HomePageURLSpanish {
+            get {
+                return ResourceManager.GetString("HomePageURLSpanish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz.
         /// </summary>
         internal static string HomeSearchTermExceedsLengthLimit {
@@ -169,92 +259,11 @@ namespace SeleniumDemoTests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://zh.wikipedia.org.
+        ///   Looks up a localized string similar to https://en.wikipedia.org/wiki/Special.
         /// </summary>
-        internal static string HomeURLChinese {
+        internal static string SpecialPageURL {
             get {
-                return ResourceManager.GetString("HomeURLChinese", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://en.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLEnglish {
-            get {
-                return ResourceManager.GetString("HomeURLEnglish", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://fr.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLFrench {
-            get {
-                return ResourceManager.GetString("HomeURLFrench", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://de.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLGerman {
-            get {
-                return ResourceManager.GetString("HomeURLGerman", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://it.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLItalian {
-            get {
-                return ResourceManager.GetString("HomeURLItalian", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://ja.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLJapanese {
-            get {
-                return ResourceManager.GetString("HomeURLJapanese", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://pl.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLPolish {
-            get {
-                return ResourceManager.GetString("HomeURLPolish", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://pt.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLPortuguese {
-            get {
-                return ResourceManager.GetString("HomeURLPortuguese", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://ru.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLRussian {
-            get {
-                return ResourceManager.GetString("HomeURLRussian", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://es.wikipedia.org.
-        /// </summary>
-        internal static string HomeURLSpanish {
-            get {
-                return ResourceManager.GetString("HomeURLSpanish", resourceCulture);
+                return ResourceManager.GetString("SpecialPageURL", resourceCulture);
             }
         }
     }
