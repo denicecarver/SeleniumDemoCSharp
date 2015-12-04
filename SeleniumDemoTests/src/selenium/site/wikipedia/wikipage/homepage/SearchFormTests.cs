@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Resources = SeleniumDemoTests.Properties.Resources;
+using TestDataResources = SeleniumDemoTests.Properties.Resources;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
@@ -74,17 +74,17 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void searchForTooLongTerm()
         {
-            // Enter term that exceeds length limit into field
-            homePage.getSearchTextField().SendKeys(Resources.HomeSearchTermExceedsLengthLimit);
+            // Enter a term that exceeds the length limit for a search item into the search field
+            homePage.SearchTextField.SendKeys(TestDataResources.HomeSearchTermExceedsLengthLimit);
 
             // Click go button
-            homePage.getSearchButton().Click();
+            homePage.SearchGoButton.Click();
 
-            // Get URL at search result page
-            string actualValue = homePage.getErrorMessageElement().Text;
+            // Get error msg at search result page
+            string actualValue = homePage.ResultsPageErrorMsg.Text;
 
-            // Compare with expected value
-            Assert.AreEqual(actualValue, Resources.ErrorMsgExceedsLengthLimit);
+            // Compare with expected error msg value
+            Assert.AreEqual(actualValue, TestDataResources.ErrorMsgExceedsLengthLimit);
         }
 
     }

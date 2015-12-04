@@ -156,7 +156,7 @@
   <data name="HomeXPathSearchButton" xml:space="preserve">
     <value>//button[@name="go"]</value>
   </data>
-  <data name="ResultsXPathSpecialErrorMsg" xml:space="preserve">
+  <data name="ResultsXPathSpecialError" xml:space="preserve">
     <value>//*[@class='error']</value>
   </data>
 </root>

@@ -180,9 +180,9 @@ namespace SeleniumDemo.Properties {
         /// <summary>
         ///   Looks up a localized string similar to //*[@class=&apos;error&apos;].
         /// </summary>
-        internal static string ResultsXPathSpecialErrorMsg {
+        internal static string ResultsXPathSpecialError {
             get {
-                return ResourceManager.GetString("ResultsXPathSpecialErrorMsg", resourceCulture);
+                return ResourceManager.GetString("ResultsXPathSpecialError", resourceCulture);
             }
         }
     }

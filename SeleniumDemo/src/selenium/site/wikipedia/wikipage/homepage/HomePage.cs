@@ -15,6 +15,33 @@ namespace com.selenium.wikitest.wikipage.homepage
             goToUrl(WikiOrgUrl);
         }
 
+        #region Search Form Elements
+        public IWebElement SearchGoButton
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathSearchButton);
+            }
+
+        }
+
+        public IWebElement SearchTextField
+        {
+            get
+            {
+                return getElementByID(Resources.HomeIDSearchFormInputField);
+            }
+        }
+
+        public IWebElement SearchErrorMsgText
+        {
+            get
+            {
+                return getElementByXPath(Resources.ResultsXPathSpecialError);
+            }
+        }
+        #endregion
+
         #region Central Logo Methods
         public IWebElement getCentralLogoLanguageLink(Language language)
         {
@@ -28,21 +55,15 @@ namespace com.selenium.wikitest.wikipage.homepage
         #endregion
 
         #region Search Form Methods
-        public IWebElement getSearchTextField()
-        {
-            return getElementByID(Resources.HomeIDSearchFormInputField);
-        }
-
-        public IWebElement getSearchButton()
-        {
-            return getElementByXPath(Resources.HomeXPathSearchButton);
-        }
         #endregion
 
-        #region Result Page Methods
-        public IWebElement getErrorMessageElement()
+        #region Result Page properties
+        public IWebElement ResultsPageErrorMsg
         {
-            return getElementByXPath(Resources.ResultsXPathSpecialErrorMsg);
+            get
+            {
+                return getElementByXPath(Resources.ResultsXPathSpecialError);
+            }
         }
         #endregion
     }
