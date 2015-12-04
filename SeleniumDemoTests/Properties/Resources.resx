@@ -117,43 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HomeIDSearchFormInputField" xml:space="preserve">
-    <value>searchInput</value>
+  <data name="HomeLanguageChinese" xml:space="preserve">
+    <value>中文</value>
   </data>
-  <data name="HomeXPathCentralLogoChinese" xml:space="preserve">
-    <value>//div[@lang='zh']/a</value>
+  <data name="HomeLanguageEnglish" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="HomeXPathCentralLogoEnglish" xml:space="preserve">
-    <value>//div[@lang='en']/a</value>
+  <data name="HomeLanguageFrench" xml:space="preserve">
+    <value>Français</value>
   </data>
-  <data name="HomeXPathCentralLogoFrench" xml:space="preserve">
-    <value>//div[@lang='fr']/a</value>
+  <data name="HomeLanguageGerman" xml:space="preserve">
+    <value>Deutsch</value>
   </data>
-  <data name="HomeXPathCentralLogoGerman" xml:space="preserve">
-    <value>//div[@lang='de']/a</value>
+  <data name="HomeLanguageItalian" xml:space="preserve">
+    <value>Italiano</value>
   </data>
-  <data name="HomeXPathCentralLogoItalian" xml:space="preserve">
-    <value>//div[@lang='it']/a</value>
+  <data name="HomeLanguageJapanese" xml:space="preserve">
+    <value>日本語</value>
   </data>
-  <data name="HomeXPathCentralLogoJapanese" xml:space="preserve">
-    <value>//div[@lang='ja']/a</value>
+  <data name="HomeLanguagePolish" xml:space="preserve">
+    <value>Polski</value>
   </data>
-  <data name="HomeXPathCentralLogoPolish" xml:space="preserve">
-    <value>//div[@lang='pl']/a</value>
+  <data name="HomeLanguagePortuguese" xml:space="preserve">
+    <value>Português</value>
   </data>
-  <data name="HomeXPathCentralLogoPortuguese" xml:space="preserve">
-    <value>//div[@lang='pt']/a</value>
+  <data name="HomeLanguageRussian" xml:space="preserve">
+    <value>Русский</value>
   </data>
-  <data name="HomeXPathCentralLogoRussian" xml:space="preserve">
-    <value>//div[@lang='ru']/a</value>
+  <data name="HomeLanguageSpanish" xml:space="preserve">
+    <value>Español</value>
   </data>
-  <data name="HomeXPathCentralLogoSpanish" xml:space="preserve">
-    <value>//div[@lang='es']/a</value>
+  <data name="HomeSearchTermExceedsLengthLimit" xml:space="preserve">
+    <value>abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz</value>
   </data>
-  <data name="HomeXPathCentralLogoTitle" xml:space="preserve">
-    <value>//body/h1/img[@title='Wikipedia']</value>
+  <data name="HomeURLChinese" xml:space="preserve">
+    <value>https://zh.wikipedia.org</value>
   </data>
-  <data name="HomeXPathSearchFormInputField" xml:space="preserve">
-    <value>//button[@name="go"]</value>
+  <data name="HomeURLEnglish" xml:space="preserve">
+    <value>https://en.wikipedia.org</value>
+  </data>
+  <data name="HomeURLFrench" xml:space="preserve">
+    <value>https://fr.wikipedia.org</value>
+  </data>
+  <data name="HomeURLGerman" xml:space="preserve">
+    <value>https://de.wikipedia.org</value>
+  </data>
+  <data name="HomeURLItalian" xml:space="preserve">
+    <value>https://it.wikipedia.org</value>
+  </data>
+  <data name="HomeURLJapanese" xml:space="preserve">
+    <value>https://ja.wikipedia.org</value>
+  </data>
+  <data name="HomeURLPolish" xml:space="preserve">
+    <value>https://pl.wikipedia.org</value>
+  </data>
+  <data name="HomeURLPortuguese" xml:space="preserve">
+    <value>https://pt.wikipedia.org</value>
+  </data>
+  <data name="HomeURLRussian" xml:space="preserve">
+    <value>https://ru.wikipedia.org</value>
+  </data>
+  <data name="HomeURLSpanish" xml:space="preserve">
+    <value>https://es.wikipedia.org</value>
   </data>
 </root>

@@ -9,7 +9,7 @@ namespace selenium.site.wikipedia.wikipage
 {
     public class WikiPage
     {
-        private const String wikiOrgUrl = "https://www.wikipedia.org/";
+        private const string wikiOrgUrl = "https://www.wikipedia.org/";
 
         protected IWebDriver webDriver = new FirefoxDriver();
 
@@ -21,7 +21,7 @@ namespace selenium.site.wikipedia.wikipage
             }
         }
 
-        protected void goToUrl(String url)
+        protected void goToUrl(string url)
         {
             try
             {
@@ -39,18 +39,25 @@ namespace selenium.site.wikipedia.wikipage
             return webDriver.FindElement(mechanism);
         }
 
-        protected String getTextAtXPath(String xpathToElement)
+        protected string getTextAtXPath(string xpathToElement)
         {
             return getElement(By.XPath(xpathToElement)).Text;
         }
 
-        protected IWebElement getElementAtXPath(String xpathToElement)
+        protected IWebElement getElementAtXPath(string xpathToElement)
         {
             return getElement(By.XPath(xpathToElement));
         }
 
+        public string searchFor(string searchTerm)
+        {
+            getElement(By.XPath("//*[@id='searchInput']")).SendKeys(searchTerm);
+            getElement(By.XPath("//button[@name='go']")).Click();
+            return webDriver.Title;
+        }
+
         // Where am I - for dealing with link testing
-        public String getCurrentUrl()
+        public string getCurrentUrl()
         {
             return webDriver.Url;
         }

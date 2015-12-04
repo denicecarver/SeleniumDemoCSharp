@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-using selenium.site.wikipedia.languages;
+using Language = selenium.site.wikipedia.languages.LanguageData.Language;
 using selenium.site.wikipedia.wikipage;
 
 using Resources = SeleniumDemo.Properties.Resources;
@@ -16,9 +16,9 @@ namespace com.selenium.wikitest.wikipage.homepage
         }
 
         #region Central Logo
-        public IWebElement getCentralLogoLanguageLink(LanguageData.Language language)
+        public IWebElement getCentralLogoLanguageLink(Language language)
         {
-            return getElementAtXPath(LanguageData.getLanguageXPath(language));
+            return getElementAtXPath(HomePageData.getLanguageXPath(language));
         }
 
         public IWebElement getCentralLogoTitle()

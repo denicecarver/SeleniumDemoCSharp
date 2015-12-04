@@ -1,10 +1,6 @@
-using System;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using selenium.site.wikipedia.languages;
-
-using shared;
+using Resources = SeleniumDemoTests.Properties.Resources;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
@@ -167,23 +163,11 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void searchForTooLongTerm()
         {
+            // Enter term that exceeds length limit into field
 
-            // Set expected outcome
-            //String expectedResult = HomePageText.getString("ErrorPage.SearchErrored");
-
-  //          // Run search and get result page
-  //          homePage.searchFor(HomePageText.getString("ErrorPage.SearchTooLongString"));
-  //          String actualResult = homePage.getSearchResultDetails();
-		
-		//try {
-  //              assertTrue(CommonMethods.formatAssertMessage(expectedResult, actualResult),
-  //                      actualResult.contains(expectedResult));
-  //          } catch (AssertionError ae) {
-  //              homePage.getUniqueScreenshot(this.toString());
-  //              ae.printStackTrace();
-  //              throw (ae);
-  //          }
-
+            // Click go button
+            // Get URL at search result page
+            // Compare with expected value
         }
 
     }
