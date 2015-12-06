@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using shared;
 using TestDataResources = SeleniumDemoTests.Properties.Resources;
+using com.selenium.wikitest.wikipage.resultspage;
 
 namespace com.selenium.wikitest.wikipage.homepage.Tests
 {
@@ -12,6 +13,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         //global for the test run
         private static TestContext context;
         private static HomePage homePage = new HomePage();
+        private static ResultsPage resultsPage = new ResultsPage();
         #endregion
 
         #region Initialisation and cleanup
@@ -57,7 +59,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             homePage.SearchGoButton.Click();
 
             // Look for Redirect text
-            string actualResult = homePage.ResultsPageRedirectClass.Text.Trim();
+            string actualResult = resultsPage.PageRedirectClass.Text.Trim();
 
             // Get the expected URL for landing on the special page
             string expectedResult = TestDataResources.HomeSearchRedirectText;
@@ -118,7 +120,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             homePage.SearchGoButton.Click();
 
             // Get error msg at search result page
-            string actualResult = homePage.ErrorPageTitle.Text;
+            string actualResult = resultsPage.ErrorPageTitle.Text;
 
             // Get the expected search result heading after search
             string expectedResult = TestDataResources.HomeSearchFailureText;
@@ -138,7 +140,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
             homePage.SearchGoButton.Click();
 
             // Get error msg at search result page
-            string actualResult = homePage.ResultsPageErrorMsg.Text;
+            string actualResult = resultsPage.ErrorMsg.Text;
 
             // Compare with expected error msg value
             Assert.AreEqual(actualResult, TestDataResources.ErrorMsgExceedsLengthLimit);

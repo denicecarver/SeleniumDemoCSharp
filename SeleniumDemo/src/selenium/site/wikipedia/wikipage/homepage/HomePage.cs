@@ -135,31 +135,5 @@ namespace com.selenium.wikitest.wikipage.homepage
         }
         #endregion
 
-        //TODO: Make a Results page and move these elements there
-        #region Result Page Elements
-        public IWebElement ResultsPageErrorMsg
-        {
-            get
-            {
-                return getElementByXPath(Resources.ResultsXPathSpecialError);
-            }
-        }
-
-        public IWebElement ResultsPageRedirectClass
-        {
-            get
-            {
-                return getElementByXPath(Resources.HomeXPathSearchRedirectClass);
-            }
-        }
-
-        public IWebElement ErrorPageTitle
-        {
-            get
-            {
-                return getElementByXPath(Resources.HomeXPathSearchFailureTitle);
-            }
-        }
-        #endregion
     }
 }
