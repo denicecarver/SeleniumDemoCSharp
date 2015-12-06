@@ -11,9 +11,15 @@ namespace selenium.site.wikipedia.wikipage
 {
     public class WikiPage
     {
+
+        private IWebDriver webDriver = new FirefoxDriver();
+
         protected const string WikiOrgUrl = "https://www.wikipedia.org/";
 
-        protected IWebDriver webDriver = new FirefoxDriver();
+        protected void goToUrl()
+        {
+            goToUrl(WikiOrgUrl);
+        }
 
         protected void goToUrl(string url)
         {
@@ -48,24 +54,22 @@ namespace selenium.site.wikipedia.wikipage
             return getElementById(By.Id(elementID));
         }
 
-        //TODO: Replace hack with viable code, this search must be generic and act from any wikipage throughout the website
-        public string searchFor(string searchTerm)
+        /// <summary>
+        /// Method for test initialization
+        /// </summary>
+        public void goToWikiHomePage()
         {
-            //TODO: Move XPaths to Properties and have HomePage retrieve them through HomePageData
-            getElementByID(Resources.HomeIDSearchFormInputField).SendKeys(searchTerm);
-            getElementByXPath(Resources.HomeXPathSearchButton).Click();
-            return webDriver.Title;
+            goToUrl();
         }
 
         /// <summary>
-        /// This provides a way to determine current state locate
+        /// Provides a way for tests to determine current location
         /// </summary>
         /// <returns> string URL</returns>
         public string getCurrentUrl()
         {
             return webDriver.Url;
         }
-
 
         public void closeBrowser()
         {

@@ -10,10 +10,103 @@ namespace com.selenium.wikitest.wikipage.homepage
     public class HomePage : WikiPage
     {
 
-        public void goToWikiHomePage()
+        #region Central Logo Elements
+        public IWebElement LinkCentralLogoChinese
         {
-            goToUrl(WikiOrgUrl);
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoChinese);
+            }
         }
+
+        public IWebElement LinkCentralLogoEnglish
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoEnglish);
+            }
+        }
+
+        public IWebElement LinkCentralLogoFrench
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoFrench);
+            }
+        }
+
+        public IWebElement LinkCentralLogoGerman
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoGerman);
+            }
+        }
+
+        public IWebElement LinkCentralLogoItalian
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoItalian);
+            }
+        }
+
+        public IWebElement LinkCentralLogoJapanese
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoJapanese);
+            }
+        }
+
+        public IWebElement LinkCentralLogoPolish
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoPolish);
+            }
+        }
+
+        public IWebElement LinkCentralLogoPortuguese
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoPortuguese);
+            }
+        }
+
+        public IWebElement LinkCentralLogoRussian
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoRussian);
+            }
+        }
+
+        public IWebElement LinkCentralLogoSpanish
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoSpanish);
+            }
+        }
+
+        public IWebElement SearchResultsHeading
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathSearchResultClass);
+            }
+        }
+
+        public IWebElement TitleCentralLogo
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathCentralLogoTitle);
+            }
+        }
+        #endregion
 
         #region Search Form Elements
         public IWebElement SearchGoButton
@@ -29,7 +122,7 @@ namespace com.selenium.wikitest.wikipage.homepage
         {
             get
             {
-                return getElementByID(Resources.HomeIDSearchFormInputField);
+                return getElementByID(Resources.HomeIDSearchFormTextField);
             }
         }
 
@@ -42,38 +135,29 @@ namespace com.selenium.wikitest.wikipage.homepage
         }
         #endregion
 
-        #region Central Logo Elements
-        public IWebElement CentralLogoLanguageLink(Language language)
-        {
-            return getElementByXPath(HomePageData.GetXPathToLanguageLink(language));
-        }
-
-        public IWebElement CentralLogoEnglishLink
-        {
-            get
-            {
-                return getElementByXPath(HomePageData.GetXPathToLanguageLink(Language.English));
-            }
-        }
-
-        public IWebElement CentralLogoTitle
-        {
-            get
-            {
-                return getElementByXPath(Resources.HomeXPathCentralLogoTitle);
-            }
-        }
-        #endregion
-
-        #region Search Form Elements
-        #endregion
-
+        //TODO: Make a Results page and move these elements there
         #region Result Page Elements
         public IWebElement ResultsPageErrorMsg
         {
             get
             {
                 return getElementByXPath(Resources.ResultsXPathSpecialError);
+            }
+        }
+
+        public IWebElement ResultsPageRedirectClass
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathSearchRedirectClass);
+            }
+        }
+
+        public IWebElement ErrorPageTitle
+        {
+            get
+            {
+                return getElementByXPath(Resources.HomeXPathSearchFailureTitle);
             }
         }
         #endregion

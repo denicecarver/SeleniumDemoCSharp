@@ -250,11 +250,65 @@ namespace SeleniumDemoTests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Request-URI Too Long.
+        /// </summary>
+        internal static string HomeSearchFailureText {
+            get {
+                return ResourceManager.GetString("HomeSearchFailureText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bracket.
+        /// </summary>
+        internal static string HomeSearchLeftCurlyBracketResult {
+            get {
+                return ResourceManager.GetString("HomeSearchLeftCurlyBracketResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parenthesis.
+        /// </summary>
+        internal static string HomeSearchRedirectTerm {
+            get {
+                return ResourceManager.GetString("HomeSearchRedirectTerm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Redirected from Parenthesis).
+        /// </summary>
+        internal static string HomeSearchRedirectText {
+            get {
+                return ResourceManager.GetString("HomeSearchRedirectText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz.
         /// </summary>
         internal static string HomeSearchTermExceedsLengthLimit {
             get {
                 return ResourceManager.GetString("HomeSearchTermExceedsLengthLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {.
+        /// </summary>
+        internal static string HomeSearchTermLeftCurlyBracket {
+            get {
+                return ResourceManager.GetString("HomeSearchTermLeftCurlyBracket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefgh [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HomeSearchTermOutOfBounds {
+            get {
+                return ResourceManager.GetString("HomeSearchTermOutOfBounds", resourceCulture);
             }
         }
         

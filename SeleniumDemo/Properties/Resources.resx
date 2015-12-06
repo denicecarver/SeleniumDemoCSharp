@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HomeIDSearchFormInputField" xml:space="preserve">
+  <data name="HomeIDSearchFormTextField" xml:space="preserve">
     <value>searchInput</value>
   </data>
   <data name="HomeXPathCentralLogoChinese" xml:space="preserve">
@@ -155,6 +155,15 @@
   </data>
   <data name="HomeXPathSearchButton" xml:space="preserve">
     <value>//button[@name="go"]</value>
+  </data>
+  <data name="HomeXPathSearchFailureTitle" xml:space="preserve">
+    <value>//title</value>
+  </data>
+  <data name="HomeXPathSearchRedirectClass" xml:space="preserve">
+    <value>//span[@class='mw-redirectedfrom']</value>
+  </data>
+  <data name="HomeXPathSearchResultClass" xml:space="preserve">
+    <value>//*[@class='mw-search-result-heading']</value>
   </data>
   <data name="ResultsXPathSpecialError" xml:space="preserve">
     <value>//*[@class='error']</value>

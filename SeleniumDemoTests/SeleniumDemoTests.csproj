@@ -59,7 +59,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\CentralLogoTests.cs" />
-    <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\HomePageTestData.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\SearchFormTests.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -50,7 +50,21 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void searchForRedirectTerm()
         {
-            Assert.Fail();
+            // Enter an empty string into the Search field to assure the field is blank
+            homePage.SearchTextField.SendKeys(TestDataResources.HomeSearchRedirectTerm);
+
+            // Click go button
+            homePage.SearchGoButton.Click();
+
+            // Look for Redirect text
+            string actualResult = homePage.ResultsPageRedirectClass.Text.Trim();
+
+            // Get the expected URL for landing on the special page
+            string expectedResult = TestDataResources.HomeSearchRedirectText;
+
+            // Compare with expected error msg value
+            Assert.IsTrue(actualResult.Equals(expectedResult),
+                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -76,13 +90,42 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [TestMethod]
         public void searchForLeftCurlyBracket()
         {
-            Assert.Fail();
+            // Enter a left curly bracket into the search field
+            string tmpo = TestDataResources.HomeSearchTermLeftCurlyBracket;
+            homePage.SearchTextField.SendKeys(TestDataResources.HomeSearchTermLeftCurlyBracket);
+
+            // Click go button
+            homePage.SearchGoButton.Click();
+
+            // Get error msg at search result page
+            string actualResult = homePage.SearchResultsHeading.Text;
+
+            // Get the expected search result heading after search
+            string expectedResult = TestDataResources.HomeSearchLeftCurlyBracketResult;
+
+            // Compare with expected error msg value
+            Assert.AreEqual(actualResult, expectedResult,
+                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
         public void searchForOutOfBoundsTerm()
         {
-            Assert.Fail();
+            // Enter a term that exceeds the length limit for a URL
+            homePage.SearchTextField.SendKeys(TestDataResources.HomeSearchTermOutOfBounds);
+
+            // Click go button
+            homePage.SearchGoButton.Click();
+
+            // Get error msg at search result page
+            string actualResult = homePage.ErrorPageTitle.Text;
+
+            // Get the expected search result heading after search
+            string expectedResult = TestDataResources.HomeSearchFailureText;
+
+            // Compare with expected error msg value
+            Assert.AreEqual(actualResult, expectedResult,
+                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]

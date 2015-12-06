@@ -63,9 +63,9 @@ namespace SeleniumDemo.Properties {
         /// <summary>
         ///   Looks up a localized string similar to searchInput.
         /// </summary>
-        internal static string HomeIDSearchFormInputField {
+        internal static string HomeIDSearchFormTextField {
             get {
-                return ResourceManager.GetString("HomeIDSearchFormInputField", resourceCulture);
+                return ResourceManager.GetString("HomeIDSearchFormTextField", resourceCulture);
             }
         }
         
@@ -174,6 +174,33 @@ namespace SeleniumDemo.Properties {
         internal static string HomeXPathSearchButton {
             get {
                 return ResourceManager.GetString("HomeXPathSearchButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //title.
+        /// </summary>
+        internal static string HomeXPathSearchFailureTitle {
+            get {
+                return ResourceManager.GetString("HomeXPathSearchFailureTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //span[@class=&apos;mw-redirectedfrom&apos;].
+        /// </summary>
+        internal static string HomeXPathSearchRedirectClass {
+            get {
+                return ResourceManager.GetString("HomeXPathSearchRedirectClass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //*[@class=&apos;mw-search-result-heading&apos;].
+        /// </summary>
+        internal static string HomeXPathSearchResultClass {
+            get {
+                return ResourceManager.GetString("HomeXPathSearchResultClass", resourceCulture);
             }
         }
         
