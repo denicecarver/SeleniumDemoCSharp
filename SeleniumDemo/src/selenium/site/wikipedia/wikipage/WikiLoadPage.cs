@@ -9,12 +9,15 @@ using Resources = SeleniumDemo.Properties.Resources;
 namespace selenium.site.wikipedia.wikipage
 
 {
-    public class WikiPage
+    public class WikiLoadPage
     {
+        public WikiLoadPage(IWebDriver webDriver)
+        {
+            this.webDriver = webDriver;
+        }
+        private IWebDriver webDriver;// = new FirefoxDriver();
 
-        private IWebDriver webDriver = new FirefoxDriver();
-
-        protected const string WikiOrgUrl = "https://www.wikipedia.org/";
+        private const string WikiOrgUrl = "https://www.wikipedia.org/";
 
         protected void goToUrl()
         {
@@ -44,7 +47,7 @@ namespace selenium.site.wikipedia.wikipage
             return getElementById(By.XPath(elementXPath)).Text;
         }
 
-        protected IWebElement getElementByXPath(string elementXPath)
+        public IWebElement getElementByXPath(string elementXPath)
         {
             return getElementById(By.XPath(elementXPath));
         }

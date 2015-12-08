@@ -1,14 +1,38 @@
 ﻿using OpenQA.Selenium;
 
-using Language = selenium.site.wikipedia.languages.LanguageData.Language;
+using selenium.site.wikipedia.resultspage;
+using Resources = SeleniumDemo.Properties.Resources;
 using selenium.site.wikipedia.wikipage;
 
-using Resources = SeleniumDemo.Properties.Resources;
-
-namespace com.selenium.wikitest.wikipage.homepage
+namespace selenium.site.wikipedia.wikipage.homepage
 {
-    public class HomePage : WikiPage
+    /// <summary> HomePage is a WikiLoadPage that carries the webdriver and has all other pages in the site
+    /// The load page is tied to the driver and anything affect the overall testing environment.
+    /// In the case of Wikipedia, the load page is the international home page:
+    ///     HomePage -> is a -> WikiLoadPage
+    /// The remaining pages are all "have a" relationships
+    ///     WikiLoadPage -> has a -> WikiChildPage
+    /// WikiChildPage is any page that the user goes to after the WikiLoadPage so all child pages
+    /// like the ResultsPage are members of the HomePage
+    /// </summary>
+    public class HomePage : WikiLoadPage
     {
+        public HomePage(IWebDriver webDriver)
+            : base(webDriver)
+        {
+        }
+        private ResultsPage resultsPage = null;
+        public ResultsPage ResultsPage
+        {
+            get
+            {
+                return resultsPage;
+            }
+            set
+            {
+                resultsPage = ResultsPage;
+            }
+        }
 
         #region Central Logo Elements
         public IWebElement LinkCentralLogoChinese
@@ -95,7 +119,7 @@ namespace com.selenium.wikitest.wikipage.homepage
         {
             get
             {
-                return getElementByXPath(Resources.HomeXPathSearchResultClass);
+                return getElementByXPath(Resources.ResultsXPathSearchResultClass);
             }
         }
 

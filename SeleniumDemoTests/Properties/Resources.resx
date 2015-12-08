@@ -181,7 +181,7 @@
     <value>https://es.wikipedia.org</value>
   </data>
   <data name="HomeSearchFailureText" xml:space="preserve">
-    <value>Request-URI Too Long</value>
+    <value>&lt;Request-URI Too Long&gt;</value>
   </data>
   <data name="HomeSearchLeftCurlyBracketResult" xml:space="preserve">
     <value>Bracket</value>

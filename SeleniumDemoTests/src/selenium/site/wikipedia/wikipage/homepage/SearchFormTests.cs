@@ -1,9 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using shared;
 using TestDataResources = SeleniumDemoTests.Properties.Resources;
-using com.selenium.wikitest.wikipage.resultspage;
+using selenium.site.wikipedia.resultspage;
+using selenium.site.wikipedia.wikipage.homepage;
 
-namespace com.selenium.wikitest.wikipage.homepage.Tests
+namespace selenium.site.wikipedia.wikipage.homepage.Tests
 {
     [TestClass()]
     public class SearchFormTests
@@ -11,10 +12,26 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
 
         #region private members
         //global for the test run
-        private static TestContext context;
-        private static HomePage homePage = new HomePage();
-        private static ResultsPage resultsPage = new ResultsPage();
+        private static TestContext testContextInstance;
+        private static HomePage homePage = new HomePage(CommonMethods.webDriver);
+        private static ResultsPage resultsPage = new ResultsPage(homePage);
         #endregion
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
 
         #region Initialisation and cleanup
         /// <summary>
@@ -23,7 +40,12 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         [ClassInitialize]
         public static void setup(TestContext testContext)
         {
-            context = testContext;
+            testContextInstance = testContext;
+        }
+
+        [TestInitialize]
+        public void setupForTest()
+        {
             homePage.goToWikiHomePage();
         }
 
@@ -34,12 +56,6 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         public static void teardown()
         {
             homePage.closeBrowser();
-        }
-
-        [TestCleanup]
-        public void resetForNextTest()
-        {
-            homePage.goToWikiHomePage();
         }
         #endregion
 

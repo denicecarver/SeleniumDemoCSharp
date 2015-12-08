@@ -57,9 +57,10 @@
     </Compile>
     <Compile Include="src\selenium\site\wikipedia\languages\LanguageData.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\resultspage\ResultsPage.cs" />
+    <Compile Include="src\selenium\site\wikipedia\wikipage\WikiChildPage.cs" />
     <Compile Include="src\shared\CommonMethods.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\HomePage.cs" />
-    <Compile Include="src\selenium\site\wikipedia\wikipage\WikiPage.cs" />
+    <Compile Include="src\selenium\site\wikipedia\wikipage\WikiLoadPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

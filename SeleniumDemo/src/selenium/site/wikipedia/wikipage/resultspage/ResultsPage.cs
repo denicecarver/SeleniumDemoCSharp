@@ -4,17 +4,22 @@ using selenium.site.wikipedia.wikipage;
 
 using Resources = SeleniumDemo.Properties.Resources;
 
-namespace com.selenium.wikitest.wikipage.resultspage
+namespace selenium.site.wikipedia.resultspage
 {
-    public class ResultsPage : WikiPage
+    public class ResultsPage : WikiChildPage
     {
+        public ResultsPage(WikiLoadPage wikiPage)
+            : base(wikiPage)
+        {
+
+        }
 
         #region Result Page Elements
         public IWebElement ErrorMsg
         {
             get
             {
-                return getElementByXPath(Resources.ResultsXPathSpecialError);
+                return wikiPage.getElementByXPath(Resources.ResultsXPathSpecialError);
             }
         }
 
@@ -22,7 +27,7 @@ namespace com.selenium.wikitest.wikipage.resultspage
         {
             get
             {
-                return getElementByXPath(Resources.HomeXPathSearchRedirectClass);
+                return wikiPage.getElementByXPath(Resources.ResultsXPathSearchRedirectClass);
             }
         }
 
@@ -30,7 +35,7 @@ namespace com.selenium.wikitest.wikipage.resultspage
         {
             get
             {
-                return getElementByXPath(Resources.HomeXPathSearchFailureTitle);
+                return wikiPage.getElementByXPath(Resources.ResultsXPathSearchFailureTitle);
             }
         }
         #endregion

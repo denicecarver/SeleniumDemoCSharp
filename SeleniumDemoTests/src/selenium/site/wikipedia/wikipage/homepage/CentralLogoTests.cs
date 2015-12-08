@@ -1,11 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Language = selenium.site.wikipedia.languages.LanguageData.Language;
+using shared;
 using HomePageTestResources = SeleniumDemoTests.Properties.Resources;
 
 using shared;
 
-namespace com.selenium.wikitest.wikipage.homepage.Tests
+namespace selenium.site.wikipedia.wikipage.homepage.Tests
 {
     [TestClass()]
     public class CentralLogoTests
@@ -14,7 +15,7 @@ namespace com.selenium.wikitest.wikipage.homepage.Tests
         #region private members
         //global for the test run
         private static TestContext context;
-        private static HomePage homePage = new HomePage();
+        private static HomePage homePage = new HomePage(CommonMethods.webDriver);
         #endregion
 
         #region Initialisation and cleanup

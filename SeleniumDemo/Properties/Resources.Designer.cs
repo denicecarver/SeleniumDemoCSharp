@@ -180,27 +180,27 @@ namespace SeleniumDemo.Properties {
         /// <summary>
         ///   Looks up a localized string similar to //title.
         /// </summary>
-        internal static string HomeXPathSearchFailureTitle {
+        internal static string ResultsXPathSearchFailureTitle {
             get {
-                return ResourceManager.GetString("HomeXPathSearchFailureTitle", resourceCulture);
+                return ResourceManager.GetString("ResultsXPathSearchFailureTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //span[@class=&apos;mw-redirectedfrom&apos;].
         /// </summary>
-        internal static string HomeXPathSearchRedirectClass {
+        internal static string ResultsXPathSearchRedirectClass {
             get {
-                return ResourceManager.GetString("HomeXPathSearchRedirectClass", resourceCulture);
+                return ResourceManager.GetString("ResultsXPathSearchRedirectClass", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to //*[@class=&apos;mw-search-result-heading&apos;].
         /// </summary>
-        internal static string HomeXPathSearchResultClass {
+        internal static string ResultsXPathSearchResultClass {
             get {
-                return ResourceManager.GetString("HomeXPathSearchResultClass", resourceCulture);
+                return ResourceManager.GetString("ResultsXPathSearchResultClass", resourceCulture);
             }
         }
         

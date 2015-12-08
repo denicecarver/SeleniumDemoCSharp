@@ -250,7 +250,7 @@ namespace SeleniumDemoTests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request-URI Too Long.
+        ///   Looks up a localized string similar to &lt;Request-URI Too Long&gt;.
         /// </summary>
         internal static string HomeSearchFailureText {
             get {
