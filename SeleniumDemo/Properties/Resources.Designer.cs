@@ -178,11 +178,11 @@ namespace SeleniumDemo.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to //title.
+        ///   Looks up a localized string similar to //h1.
         /// </summary>
-        internal static string ResultsXPathSearchFailureTitle {
+        internal static string ResultsXPathSearchFailureHeader {
             get {
-                return ResourceManager.GetString("ResultsXPathSearchFailureTitle", resourceCulture);
+                return ResourceManager.GetString("ResultsXPathSearchFailureHeader", resourceCulture);
             }
         }
         

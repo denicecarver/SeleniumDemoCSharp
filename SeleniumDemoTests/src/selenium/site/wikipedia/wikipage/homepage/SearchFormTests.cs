@@ -1,8 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using shared;
-using TestDataResources = SeleniumDemoTests.Properties.Resources;
 using selenium.site.wikipedia.resultspage;
-using selenium.site.wikipedia.wikipage.homepage;
+using TestDataResources = SeleniumDemoTests.Properties.Resources;
 
 namespace selenium.site.wikipedia.wikipage.homepage.Tests
 {
@@ -60,9 +59,23 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         #endregion
 
         [TestMethod]
-        public void searchForExistingTerm()
+        public void searchForValidTerm()
         {
-            Assert.Fail();
+            // Enter a valid string into the Search field for most basic validation
+            homePage.SearchTextField.SendKeys(TestDataResources.HomeSearchValidTerm);
+
+            // Click go button
+            homePage.SearchGoButton.Click();
+
+            // Get actual URL for valid term
+            string actualResult = homePage.getCurrentUrl();
+
+            // Get expected URL for valid term
+            string expectedResult = TestDataResources.HomeSearchValidTermURL;
+
+            // Compare with expected error msg value
+            Assert.IsTrue(actualResult.Equals(expectedResult),
+                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]

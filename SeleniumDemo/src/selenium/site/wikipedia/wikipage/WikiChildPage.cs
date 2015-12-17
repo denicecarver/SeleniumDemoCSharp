@@ -1,9 +1,4 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
-using System.Diagnostics;
-
-using Resources = SeleniumDemo.Properties.Resources;
-
+﻿
 namespace selenium.site.wikipedia.wikipage
 
 {

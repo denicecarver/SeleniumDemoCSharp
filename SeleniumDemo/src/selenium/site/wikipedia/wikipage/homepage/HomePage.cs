@@ -2,7 +2,6 @@
 
 using selenium.site.wikipedia.resultspage;
 using Resources = SeleniumDemo.Properties.Resources;
-using selenium.site.wikipedia.wikipage;
 
 namespace selenium.site.wikipedia.wikipage.homepage
 {

@@ -1,10 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Language = selenium.site.wikipedia.languages.LanguageData.Language;
 using shared;
 using HomePageTestResources = SeleniumDemoTests.Properties.Resources;
-
-using shared;
 
 namespace selenium.site.wikipedia.wikipage.homepage.Tests
 {

@@ -250,7 +250,7 @@ namespace SeleniumDemoTests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Request-URI Too Long&gt;.
+        ///   Looks up a localized string similar to Request-URI Too Long.
         /// </summary>
         internal static string HomeSearchFailureText {
             get {
@@ -309,6 +309,24 @@ namespace SeleniumDemoTests.Properties {
         internal static string HomeSearchTermOutOfBounds {
             get {
                 return ResourceManager.GetString("HomeSearchTermOutOfBounds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selenium.
+        /// </summary>
+        internal static string HomeSearchValidTerm {
+            get {
+                return ResourceManager.GetString("HomeSearchValidTerm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://en.wikipedia.org/wiki/Selenium.
+        /// </summary>
+        internal static string HomeSearchValidTermURL {
+            get {
+                return ResourceManager.GetString("HomeSearchValidTermURL", resourceCulture);
             }
         }
         

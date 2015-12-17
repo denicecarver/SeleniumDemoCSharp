@@ -35,7 +35,7 @@ namespace selenium.site.wikipedia.resultspage
         {
             get
             {
-                return wikiPage.getElementByXPath(Resources.ResultsXPathSearchFailureTitle);
+                return wikiPage.getElementByXPath(Resources.ResultsXPathSearchFailureHeader);
             }
         }
         #endregion

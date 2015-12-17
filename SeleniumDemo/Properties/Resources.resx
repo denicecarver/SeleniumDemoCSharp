@@ -156,8 +156,8 @@
   <data name="HomeXPathSearchButton" xml:space="preserve">
     <value>//button[@name="go"]</value>
   </data>
-  <data name="ResultsXPathSearchFailureTitle" xml:space="preserve">
-    <value>//title</value>
+  <data name="ResultsXPathSearchFailureHeader" xml:space="preserve">
+    <value>//h1</value>
   </data>
   <data name="ResultsXPathSearchRedirectClass" xml:space="preserve">
     <value>//span[@class='mw-redirectedfrom']</value>

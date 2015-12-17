@@ -1,10 +1,10 @@
+
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
-
 namespace shared
 {
-    public class CommonMethods {
+    public static class CommonMethods {
 
         public static IWebDriver webDriver = new FirefoxDriver();
 
@@ -29,12 +29,12 @@ namespace shared
             //return Long.toString(cal.getTimeInMillis());
         }
 
-        public void getUniqueScreenshot(string filenameNoExtension)
+        public static void getUniqueScreenshot(string filenameNoExtension)
         {
             //getScreenshot(filenameNoExtension + CommonMethods.getUniqueStringFromCurrentMilliseconds());
         }
 
-        public void getScreenshot(string filenameNoExtension)
+        public static void getScreenshot(string filenameNoExtension)
         {
             //WebDriver augmentedDriver = new Augmenter().augment(webDriver);
             //File screenshot = ((TakesScreenshot)augmentedDriver).

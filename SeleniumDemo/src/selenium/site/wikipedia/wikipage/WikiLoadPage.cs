@@ -1,10 +1,7 @@
 ﻿using System;
 
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
 using System.Diagnostics;
-
-using Resources = SeleniumDemo.Properties.Resources;
 
 namespace selenium.site.wikipedia.wikipage
 
@@ -15,7 +12,7 @@ namespace selenium.site.wikipedia.wikipage
         {
             this.webDriver = webDriver;
         }
-        private IWebDriver webDriver;// = new FirefoxDriver();
+        private IWebDriver webDriver;
 
         private const string WikiOrgUrl = "https://www.wikipedia.org/";
 
