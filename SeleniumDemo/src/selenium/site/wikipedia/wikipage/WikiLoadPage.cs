@@ -2,6 +2,7 @@
 
 using OpenQA.Selenium;
 using System.Diagnostics;
+using System.Collections.ObjectModel;
 
 namespace selenium.site.wikipedia.wikipage
 
@@ -38,6 +39,11 @@ namespace selenium.site.wikipedia.wikipage
         {
             return webDriver.FindElement(mechanism);
         }
+        
+        protected ReadOnlyCollection<IWebElement> getElementsById(By mechanism)
+        {
+            return webDriver.FindElements(mechanism);
+        }
 
         protected string getTextByXPath(string elementXPath)
         {
@@ -47,6 +53,11 @@ namespace selenium.site.wikipedia.wikipage
         public IWebElement getElementByXPath(string elementXPath)
         {
             return getElementById(By.XPath(elementXPath));
+        }
+
+        public ReadOnlyCollection<IWebElement> getElementsByXPath(string elementXPath)
+        {
+            return getElementsById(By.XPath(elementXPath));
         }
 
         protected IWebElement getElementByID(string elementID)

@@ -75,7 +75,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
             // Compare with expected error msg value
             Assert.IsTrue(actualResult.Equals(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -95,7 +95,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
             // Compare with expected error msg value
             Assert.IsTrue(actualResult.Equals(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -115,7 +115,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
             // Compare with expected error msg value
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -136,7 +136,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
             // Compare with expected error msg value
             Assert.AreEqual(actualResult, expectedResult,
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -156,7 +156,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
             // Compare with expected error msg value
             Assert.AreEqual(actualResult, expectedResult,
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]

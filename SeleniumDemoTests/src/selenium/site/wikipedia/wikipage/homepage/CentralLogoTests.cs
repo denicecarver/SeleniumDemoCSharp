@@ -130,7 +130,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -148,7 +148,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (uses contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -166,7 +166,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -184,7 +184,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -202,7 +202,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -220,7 +220,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -238,7 +238,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -256,7 +256,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -274,7 +274,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
         [TestMethod]
@@ -292,7 +292,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
             // Compare actual and expected URLs
             // (use contains instead of equals in test because landing page may not be homepage for a language)
             Assert.IsTrue(actualResult.Contains(expectedResult),
-                    CommonMethods.formatAssertMessage(expectedResult, actualResult));
+                    CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
         #endregion
 

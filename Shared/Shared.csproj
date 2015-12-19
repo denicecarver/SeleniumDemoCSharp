@@ -51,11 +51,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\shared\CommonMethods.cs" />
-    <Compile Include="src\shared\SQLiteColumn.cs" />
-    <Compile Include="src\shared\SQLiteColumnList.cs" />
-    <Compile Include="src\shared\SQLiteHelper.cs" />
-    <Compile Include="src\shared\SQLiteTable.cs" />
+    <Compile Include="src\System\Data\SQLite\SQLiteColumn.cs" />
+    <Compile Include="src\System\Data\SQLite\SQLiteColumnList.cs" />
+    <Compile Include="src\System\Data\SQLite\SQLiteHelper.cs" />
+    <Compile Include="src\System\Data\SQLite\SQLiteTable.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
